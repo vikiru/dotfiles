@@ -1,0 +1,64 @@
+# Previous color scheme: fg:#7df9aa bg:#030b16
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json' 
+
+format = """\
+[](fg:#7DF9AA)\
+$directory\
+[](fg:#7DF9AA)\
+$git_branch\
+$git_status $git_metrics\ 
+$fill\
+$cmd_duration\
+$time\
+$jobs\
+$line_break$character\
+"""
+
+[directory]
+format = "[  $path ]($style)"
+style = "fg:#7DF9AA"
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = false
+
+[directory.substitutions]
+"Documents" = "󰈙"
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"~/projects/" = "projects/"
+"~/.config/" = "config/"
+"~/.config/nvim" = "nvim/"
+
+[git_branch]
+symbol = "  "
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+style = "fg:#7DF9AA"
+
+[git_status]
+format = '[$all_status$ahead_behind]($style)'
+style = "fg:#7DF9AA"
+
+[git_metrics]
+disabled = false
+format = "([+$added]($added_style) [-$deleted]($deleted_style))"
+
+[time]
+disabled = false
+time_format = "%I:%M %p"
+format = '[  $time ]($style)'
+style = "fg:#7DF9AA"
+
+[cmd_duration]
+min_time = 0
+format = '[  $duration ]($style)'
+style = "fg:#7DF9AA"
+
+[character]
+success_symbol = '[ ➜](bold green) '
+error_symbol = '[ ✗](#E84D44) '
+
+[fill]
+symbol = " "

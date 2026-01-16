@@ -1,0 +1,5 @@
+[wsl2]
+guiApplications=false
+memory=8GB
+swap=2GB
+processors=4

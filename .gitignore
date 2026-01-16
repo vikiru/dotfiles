@@ -1,0 +1,48 @@
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor/IDE backups and temp files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Node / npm / pnpm
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Python / pip
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env
+*.env
+
+# Rust / Cargo
+target/
+
+# Logs and runtime files
+*.log
+*.pid
+*.sock
+
+# Secrets (never commit)
+*.key
+*.pem
+*.crt
+*.asc
+*.gpg
+.env.local
+.env.*.local
+
+# Topgrade cache or temp
+topgrade.d/
+
+# Zed editor temp files
+.zed_cache/

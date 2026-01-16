@@ -1,0 +1,50 @@
+[terminal]
+[terminal.shell]
+program = "wsl.exe ~"
+args = ["--distribution", "Ubuntu-24.04", "--exec", "/bin/zsh", "--login"]
+
+[keyboard]
+bindings = [
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "Insert", mods = "Shift", action = "PasteSelection" },
+]
+
+[selection]
+save_to_clipboard = true
+
+[colors]
+[colors.primary]
+background = "#030B16"
+foreground = "#7DF9AA"
+
+[colors.cursor]
+text = "CellForeground"
+cursor = "#F08D49"
+
+[colors.normal]
+black = "#030B16"
+red = "#EF5350"
+green = "#4CAF50"
+yellow = "#FFEB3B"
+blue = "#2196F3"
+magenta = "#C792EA"
+cyan = "#00BCD4"
+white = "#B0BEC5"
+
+[colors.bright]
+black = "#4F5B66"
+red = "#EF5350"
+green = "#4CAF50"
+yellow = "#FFEB3B"
+blue = "#2196F3"
+magenta = "#FF4081"
+cyan = "#18FFFF"
+white = "#FFFFFF"
+
+[font]
+normal = { family = "JetBrainsMono NFM", style = "Regular" }
+bold = { family = "JetBrainsMono NFM", style = "Bold" }
+italic = { family = "JetBrainsMono NFM", style = "Italic" }
+bold_italic = { family = "JetBrainsMono NFM", style = "Bold Italic" }
+size = 14.0  # Adjust this to your preferred size

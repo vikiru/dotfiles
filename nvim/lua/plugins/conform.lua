@@ -1,0 +1,25 @@
+return {
+  "stevearc/conform.nvim",
+  opts = {
+    formatters_by_ft = {
+      sh = { "shfmt" },
+      sql = { "sqlfmt" },
+      lua = { "stylua" },
+      rust = { "rustfmt" },
+      python = { "ruff" },
+      java = { "google_java_format" },
+      javascript = { "biome", "prettierd", "prettier", stop_after_first = true },
+      typescript = { "biome", "prettierd", "prettier", stop_after_first = true },
+      javascriptreact = { "biome", "prettierd", "prettier", stop_after_first = true },
+      typescriptreact = { "biome", "prettierd", "prettier", stop_after_first = true },
+      html = { "biome", "prettierd", "prettier", stop_after_first = true },
+      css = { "biome", "prettierd", "prettier", stop_after_first = true },
+      json = { "prettier", "prettierd", "biome", stop_after_first = true },
+      xml = { "xmlformatter" },
+      yaml = { "yamlfmt" },
+      toml = { "taplo" },
+      markdown = { "prettierd", "prettier", stop_after_first = true },
+      graphql = { "prettierd", "prettier", stop_after_first = true },
+    },
+  },
+}
