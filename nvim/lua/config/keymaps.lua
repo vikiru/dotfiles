@@ -15,6 +15,7 @@ vim.keymap.set("n", "<Tab>", ":lua vim.lsp.buf.hover()<CR>", { noremap = true, s
 --   require("custom.custom_gx").open_helpful_docs()
 -- end, { desc = "Open helpful docs" })
 --
+
 -- Disabled Keymaps
 vim.keymap.set("n", "q:", "<Nop>", { noremap = true, silent = true })
 vim.keymap.set("n", "q/", "<Nop>", { noremap = true, silent = true })
