@@ -17,7 +17,7 @@ return {
 ]],
       },
     },
-    explorer = { enabled = true },
+    explorer = { enabled = false },
     lazygit = { enabled = true },
     gh = { enabled = true },
     gitbrowse = { enabled = true },

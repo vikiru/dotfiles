@@ -50,7 +50,7 @@
 		}
 	},
 	"soft_wrap": "editor_width",
-	"buffer_font_family": "JetBrainsMono Nerd Font",
+	"buffer_font_family": ".SystemUIFont",
 	"buffer_font_size": 16,
 	"buffer_font_features": {
 		"ligatures": true,
@@ -106,7 +106,7 @@
 	"which_key": {
 		"enabled": true
 	},
-	"icon_theme": "VSCode Icons for Zed (Dark Official Icons)",
+	"icon_theme": "VSCode Icons for Zed (Dark)",
 	"git": {
 		"inline_blame": {
 			"enabled": false
@@ -168,7 +168,7 @@
 	"redact_private_values": true,
 	"theme": {
 		"mode": "dark",
-		"light": "One Dark",
+		"light": "One Light",
 		"dark": "Ayu Dark"
 	},
 	"notification_panel": {
@@ -197,7 +197,7 @@
 		"markdown-oxide": true
 	},
 	"terminal": {
-		"working_directory": "always_home",
+		"working_directory": "current_project_directory",
 		"font_family": ".SystemUIFont",
 		"font_size": 15,
 		"copy_on_select": true,
@@ -570,16 +570,11 @@
 			},
 			"language_servers": [
 				"biome",
-				"tsgo",
 				"!eslint",
 				"!prettier",
-				"!vtsls"
-			],
-			"code_actions_on_format": {
-				"source.fixAll.biome": true,
-				"source.organizeImports.biome": true,
-				"source.addMissingImports.biome": true
-			}
+				"vtsls",
+				"tailwindcss-language-server"
+			]
 		},
 		"TypeScript": {
 			"tab_size": 2,
@@ -590,10 +585,11 @@
 			},
 			"language_servers": [
 				"biome",
-				"tsgo",
 				"!eslint",
 				"!prettier",
-				"!vtsls"
+				"tsgo",
+				"vtsls",
+				"tailwindcss-language-server"
 			],
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
@@ -610,11 +606,11 @@
 			},
 			"language_servers": [
 				"biome",
-				"tsgo",
-				"tailwindcss-language-server",
 				"!eslint",
 				"!prettier",
-				"!vtsls"
+				"tsgo",
+				"vtsls",
+				"tailwindcss-language-server"
 			],
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
@@ -661,7 +657,7 @@
 					"name": "ruff"
 				}
 			},
-			"language_servers": ["ty", "pyrefly", "zuban", "!basedpyright"]
+			"language_servers": ["pyright", "ruff", "!basedpyright"]
 		},
 		"Java": {
 			"tab_size": 4,
