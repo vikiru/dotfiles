@@ -1,9 +1,8 @@
 hide-cursor-when-typing = true
 use-fork = false
 confirm-before-quit = false
-line-height = 1.125
+line-height = 1.1
 ignore-selection-foreground-color = true
-padding-y = [10, -10]
 
 [bell]
 visual = true
@@ -61,7 +60,7 @@ program = "vi"
 args = []
 
 [fonts]
-family = "Monaspace Neon NF"
+family = "Cascadia Code"
 size = 16
 use-drawable-chars = true
 features = [
@@ -78,26 +77,6 @@ features = [
   "ss09=1",
   "ss10=1",
 ]
-
-[fonts.regular]
-family = "Monaspace Neon NF"
-style = "Normal"
-weight = 400
-
-[fonts.bold]
-family = "Monaspace Neon NF"
-style = "Normal"
-weight = 700
-
-[fonts.italic]
-family = "Monaspace Neon NF"
-style = "Italic"
-weight = 400
-
-[fonts.bold-italic]
-family = "Monaspace Neon NF"
-style = "Italic"
-weight = 700
 
 [keyboard]
 use-kitty-keyboard-protocol = true

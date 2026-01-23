@@ -17,7 +17,7 @@
     "workbench.iconTheme": "vscode-icons",
     "workbench.list.smoothScrolling": true,
     "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
-    "editor.fontLigatures": false,
+    "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10', 'liga'",
     "editor.cursorBlinking": "smooth",
     "editor.minimap.enabled": false,
     "editor.formatOnSave": true,

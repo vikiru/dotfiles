@@ -1,6 +1,7 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
+config.automatically_reload_config = true
 config.default_prog = { "wsl.exe", "--cd", "~", "-d", "Ubuntu-24.04" }
 config.default_domain = "WSL:Ubuntu-24.04"
 config.default_cwd = "~"
@@ -13,18 +14,21 @@ config.wsl_domains = {
 	},
 }
 
-config.cursor_blink_rate = 0
+config.cursor_blink_rate = 800
+config.hide_mouse_cursor_when_typing = true
+config.confirm_before_quitting = false
+config.line_height = 1.1
 
 config.colors = {
 	foreground = "#7DF9AA",
 	background = "#030B16",
 
-	cursor_bg = "#FFD866",
+	cursor_bg = "#F08D49",
 	cursor_fg = "#030B16",
-	cursor_border = "#FFD866",
+	cursor_border = "#F08D49",
 
-	selection_fg = "#C0D4E5",
-	selection_bg = "#374859",
+	selection_fg = "#030B16",
+	selection_bg = "#F08D49",
 
 	scrollbar_thumb = "#2A3A4A",
 	split = "#374859",
@@ -124,8 +128,22 @@ config.inactive_pane_hsb = {
 	brightness = 0.8,
 }
 
-config.font = wezterm.font("Monaspace Neon NF")
-config.font_size = 19.0
+config.font = wezterm.font("Cascadia Code")
+config.font_size = 16.0
+config.harfbuzz_features = {
+	"calt=1",
+	"liga=1",
+	"ss01=1",
+	"ss02=1",
+	"ss03=1",
+	"ss04=1",
+	"ss05=1",
+	"ss06=1",
+	"ss07=1",
+	"ss08=1",
+	"ss09=1",
+	"ss10=1",
+}
 
 config.text_background_opacity = 1.0
 config.window_padding = {
@@ -173,8 +191,9 @@ config.mouse_bindings = {
 }
 
 config.front_end = "OpenGL"
-config.animation_fps = 60
-config.max_fps = 60
+config.animation_fps = 120
+config.max_fps = 120
 config.prefer_egl = true
+config.disable_unfocused_render = true
 
 return config
