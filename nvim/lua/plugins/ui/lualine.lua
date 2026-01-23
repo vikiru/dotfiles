@@ -4,8 +4,6 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   config = function()
     local lualine = require("lualine")
-    local lazy_status = require("lazy.status")
-
     local colors = {
       foreground = "#7DF9AA",
       background = "#030B16",
@@ -14,7 +12,6 @@ return {
       accent_red = "#E06C75",
       inactive_foreground = "#6A737D",
     }
-
     local custom_lualine_theme = {
       normal = {
         a = { bg = colors.foreground, fg = colors.background, gui = "bold" },
@@ -47,32 +44,10 @@ return {
         c = { bg = colors.background, fg = colors.inactive_foreground },
       },
     }
-
-    local mode = {
-      "mode",
-      fmt = function(str)
-        return " " .. str
-      end,
-    }
-
-    local diff = {
-      "diff",
-      colored = true,
-      symbols = { added = " ", modified = " ", removed = " " },
-    }
-
-    local filename = {
-      "filename",
-      file_status = true,
-      path = 0,
-    }
-
-    local branch = { "branch", icon = { "", color = { fg = "#A6D4DE" } }, "|" }
-
     lualine.setup({
       icons_enabled = true,
       options = {
-        --[[  theme = custom_lualine_theme, ]]
+        theme = custom_lualine_theme,
         component_separators = { left = "|", right = "|" },
         section_separators = { left = "|", right = "" },
         disabled_filetypes = {
@@ -98,9 +73,16 @@ return {
         },
       },
       sections = {
-        lualine_a = { mode },
-        lualine_b = { branch, diff, "diagnostics" },
-        lualine_c = { filename },
+        lualine_a = {
+          {
+            "mode",
+            fmt = function(str)
+              return " " .. str
+            end,
+          },
+        },
+        lualine_b = { { "branch", icon = { "", color = { fg = "#A6D4DE" } }, "|" }, "diff", "diagnostics" },
+        lualine_c = { { "filename", file_status = true, path = 0 } },
         lualine_x = { "encoding", "fileformat", "filetype" },
         lualine_y = { "progress" },
         lualine_z = { "location" },

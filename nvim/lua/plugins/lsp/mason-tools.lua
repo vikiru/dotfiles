@@ -1,6 +1,6 @@
 return {
   "WhoIsSethDaniel/mason-tool-installer.nvim",
-  event = { "BufReadPre", "BufNewFile" },
+  cmd = { "MasonToolsInstall", "MasonToolsUpdate" },
   dependencies = { "mason-org/mason.nvim" },
   opts = {
     ensure_installed = {
@@ -56,9 +56,6 @@ return {
 
       -- SQL
       "sqlls",
-
-      -- Tailwind CSS
-      "tailwindcss-language-server",
 
       -- YAML
       "yaml-language-server",

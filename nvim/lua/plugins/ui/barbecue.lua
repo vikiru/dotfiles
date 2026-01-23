@@ -1,6 +1,7 @@
 return {
-  "utilyre/barbecue.nvim",
+  "utilyre/barbecueenabled = false,.nvim",
   name = "barbecue",
+  enabled = false,
   event = { "BufReadPost", "BufNewFile" },
   version = "*",
   dependencies = {

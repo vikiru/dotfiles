@@ -1,6 +1,5 @@
 return {
   "romgrk/barbar.nvim",
-  enabled = true,
   event = { "BufReadPost", "BufNewFile" },
   dependencies = {
     "lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
