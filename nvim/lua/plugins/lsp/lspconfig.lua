@@ -1,13 +1,14 @@
 return {
-  "neovim/nvim-lspconfig",
+  "mason-org/mason-lspconfig.nvim",
   opts = {
-    servers = {
-      ts_ls = { enabled = false },
-      vtsls = { enabled = false },
-      tsserver = { enabled = false },
-      pyright = { enabled = false },
-      pyrefly = { enabled = false },
-      ty = { enabled = true },
+    ensure_installed = {
+      "tsgo",
+      "oxlint",
+      "biome",
     },
+  },
+  dependencies = {
+    { "mason-org/mason.nvim", opts = {} },
+    "neovim/nvim-lspconfig",
   },
 }

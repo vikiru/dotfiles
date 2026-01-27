@@ -12,6 +12,7 @@ return {
       "gitignore",
       "bash",
       "c",
+      "zsh",
       "diff",
       "html",
       "http",
