@@ -1,668 +1,708 @@
 {
-	"file_scan_exclusions": [
-		"**/.git",
-		"**/.svn",
-		"**/.hg",
-		"**/.jj",
-		"**/CVS",
-		"**/.DS_Store",
-		"**/Thumbs.db",
-		"**/.classpath",
-		"**/.project",
-		"**/.idea",
-		"**/.vscode",
-		"**/.astro",
-		"**/.gradle",
-		"**/.m2",
-		"**/.next",
-		"**/.turbo",
-		"**/.vercel",
-		"**/.nyc_output",
-		"**/coverage",
-		"**/node_modules",
-		"**/node_modules/**",
-		"**/.vscode-test",
-		"**/__pycache__",
-		"**/.mypy_cache",
-		"**/.ruff_cache",
-		"**/.venv",
-		"**/venv",
-		"**/build",
-		"**/dist",
-		"**/target",
-		"**/.expo",
-		"**/.expo-shared",
-		"**/ios/Pods",
-		"**/android/.gradle",
-		"**/android/build",
-		"**/migrations",
-		"**/*.pyc",
-		"**/db.sqlite",
-		"**/*.db"
-	],
-	"file_types": {
-		"dotenv": [".env*"],
-		"jsonc": ["**/frontmatter.json", "**/.frontmatter/config/*.json"]
-	},
-	"autosave": {
-		"after_delay": {
-			"milliseconds": 1000
-		}
-	},
-	"soft_wrap": "editor_width",
-	"buffer_font_family": "JetBrainsMono Nerd Font",
-	"buffer_font_size": 16,
-	"buffer_font_features": {
-		"ligatures": true,
-		"calt": true
-	},
-	"ui_font_size": 16,
-	"hide_mouse": "on_typing_and_movement",
-	"cursor_blink": false,
-	"relative_line_numbers": "enabled",
-	"show_wrap_guides": false,
-	"indent_guides": {
-		"line_width": 1,
-		"active_line_width": 2,
-		"coloring": "indent_aware",
-		"background_coloring": "disabled"
-	},
-	"vim_mode": false,
-	"base_keymap": "VSCode",
-	"use_on_type_format": false,
-	"search": {
-		"case_sensitive": false,
-		"include_ignored": false,
-		"whole_word": false,
-		"button": true,
-		"center_on_match": true,
-		"regex": false
-	},
-	"use_smartcase_search": true,
-	"completions": {
-		"words_min_length": 3
-	},
-	"show_signature_help_after_edits": true,
-	"show_completions_on_input": true,
-	"colorize_brackets": true,
-	"show_whitespaces": "none",
-	"toolbar": {
-		"breadcrumbs": false,
-		"quick_actions": false
-	},
-	"project_panel": {
-		"hide_gitignore": false,
-		"entry_spacing": "standard",
-		"indent_guides": {
-			"show": "always"
-		},
-		"dock": "right",
-		"auto_reveal_entries": true
-	},
-	"tabs": {
-		"file_icons": true,
-		"git_status": true
-	},
-	"which_key": {
-		"enabled": true
-	},
-	"icon_theme": "VSCode Icons for Zed (Dark)",
-	"git": {
-		"inline_blame": {
-			"enabled": false
-		},
-		"git_gutter": "tracked_files"
-	},
-	"context_servers": {
-		"mcp-server-context7": {
-			"enabled": true,
-			"settings": {
-				"context7_api_key": ""
-			}
-		},
-		"memory": {
-			"args": ["-y", "@modelcontextprotocol/server-memory"],
-			"command": "npx",
-			"enabled": false,
-			"env": {
-				"MEMORY_FILE_PATH": ""
-			}
-		},
-		"time": {
-			"args": ["mcp-server-time"],
-			"command": "uvx"
-		}
-	},
-	"agent": {
-		"dock": "left",
-		"play_sound_when_agent_done": true,
-		"default_profile": "write",
-		"always_allow_tool_actions": true,
-		"default_model": {
-			"provider": "google",
-			"model": "gemini-3-flash-preview"
-		},
-		"model_parameters": []
-	},
-	"wsl_connections": [
-		{
-			"distro_name": "Ubuntu-24.04",
-			"user": "vikiru",
-			"projects": [
-				{
-					"paths": ["/home/vikiru/projects"]
-				}
-			]
-		}
-	],
-	"features": {
-		"edit_prediction_provider": "supermaven"
-	},
-	"auto_update_extensions": {
-		"opencode": false
-	},
-	"telemetry": {
-		"diagnostics": false,
-		"metrics": false
-	},
-	"redact_private_values": true,
-	"theme": {
-		"mode": "dark",
-		"light": "One Light",
-		"dark": "Ayu Dark"
-	},
-	"notification_panel": {
-		"dock": "left"
-	},
-	"git_panel": {
-		"dock": "right"
-	},
-	"outline_panel": {
-		"dock": "right"
-	},
-	"auto_install_extensions": {
-		"git-firefly": true,
-		"dockerfile": true,
-		"docker-compose": true,
-		"lua": true,
-		"html": true,
-		"astro": true,
-		"tombi": true,
-		"tsgo": true,
-		"biome": true,
-		"ruff": true,
-		"java-eclipse-jdtls": true,
-		"yaml": true,
-		"sql": true,
-		"markdown-oxide": true
-	},
-	"terminal": {
-		"working_directory": "current_project_directory",
-		"font_family": "JetBrainsMono Nerd Font",
-		"font_size": 15,
-		"copy_on_select": true,
-		"detect_venv": {
-			"on": {
-				"directories": [".env", "env", ".venv", "venv"],
-				"activate_script": "default"
-			}
-		}
-	},
-	"minimap": {
-		"show": "never"
-	},
-	"scrollbar": {
-		"show": "never"
-	},
-	"sticky_scroll": {
-		"enabled": true
-	},
-	"active_pane_modifiers": {
-		"inactive_opacity": 0.4
-	},
-	"preview_tabs": {
-		"enabled": true,
-		"enable_preview_from_file_finder": true,
-		"enable_preview_from_project_panel": true,
-		"enable_preview_from_multibuffer": true,
-		"enable_preview_file_from_code_navigation": true
-	},
-	"use_system_path_prompts": false,
-	"experimental.theme_overrides": {
-		"accents": [
-			"#7DF9AA66",
-			"#7DF9AA99",
-			"#7DF9AA80",
-			"#7DF9AA4D",
-			"#7DF9AA33",
-			"#7DF9AA1A",
-			"#7DF9AA0D"
-		],
-		"background.appearance": "blurred",
-		"border": "#2a2f3d15",
-		"border.variant": "#00000000",
-		"border.focused": "#7DF9AA",
-		"border.selected": "#7DF9AA",
-		"border.transparent": "#7DF9AA80",
-		"border.disabled": "#6e738d",
-		"elevated_surface.background": "#0f0f14",
-		"surface.background": "#0f0f141a",
-		"background": "#0c0c12cc",
-		"element.background": "#10121a",
-		"element.hover": "#32364b",
-		"element.active": "#00000000",
-		"element.selected": "#32364b4d",
-		"element.disabled": "#6e738d",
-		"drop_target.background": "#7DF9AA80",
-		"ghost_element.background": "#0f0f1466",
-		"ghost_element.hover": "#0f0f1490",
-		"ghost_element.active": "#7DF9AA30",
-		"ghost_element.selected": "#7DF9AA50",
-		"ghost_element.disabled": "#6e738d",
-		"text": "#e1e8f0",
-		"text.muted": "#7a8499",
-		"text.placeholder": "#5b6078",
-		"text.disabled": "#494d64",
-		"text.accent": "#7DF9AA",
-		"icon": "#e1e8f0",
-		"icon.muted": "#7a8499",
-		"icon.disabled": "#6e738d",
-		"icon.placeholder": "#5b6078",
-		"icon.accent": "#7DF9AA",
-		"status_bar.background": "#050508",
-		"title_bar.background": "#050508",
-		"title_bar.inactive_background": "#181926d9",
-		"toolbar.background": "#00000000",
-		"tab_bar.background": "#00000000",
-		"tab.inactive_background": "#00000000",
-		"tab.active_background": "#10121a90",
-		"search.match_background": "#7DF9AA66",
-		"panel.background": "#00000000",
-		"panel.focused_border": "#00000000",
-		"panel.indent_guide": "#32364b99",
-		"panel.indent_guide_active": "#5b6078",
-		"panel.indent_guide_hover": "#7DF9AA",
-		"panel.overlay_background": "#1e1e28",
-		"pane.focused_border": "#7DF9AA",
-		"pane_group.border": "#2a2f3d15",
-		"scrollbar.thumb.background": "#7DF9AA80",
-		"scrollbar.thumb.hover_background": "#7DF9AA99",
-		"scrollbar.thumb.border": "#7DF9AA",
-		"scrollbar.track.background": "#00000000",
-		"scrollbar.track.border": "#00000000",
-		"editor.foreground": "#e1e8f0",
-		"editor.background": "#0c0c12cc",
-		"editor.gutter.background": "#00000000",
-		"editor.subheader.background": "#1e2030",
-		"editor.active_line.background": "#7DF9AA08",
-		"editor.highlighted_line.background": "#32364b33",
-		"editor.line_number": "#494d64",
-		"editor.active_line_number": "#7DF9AA",
-		"editor.invisible": "#939ab733",
-		"editor.wrap_guide": "#5b6078",
-		"editor.active_wrap_guide": "#5b6078",
-		"editor.document_highlight.bracket_background": "#7DF9AA17",
-		"editor.document_highlight.read_background": "#7DF9AA22",
-		"editor.document_highlight.write_background": "#7DF9AA22",
-		"editor.indent_guide": "#7DF9AA15",
-		"editor.indent_guide_active": "#7DF9AA77",
-		"terminal.background": "#00000000",
-		"terminal.ansi.background": "#1e2030",
-		"terminal.foreground": "#e1e8f0",
-		"terminal.dim_foreground": "#6e738d",
-		"terminal.bright_foreground": "#e1e8f0",
-		"terminal.ansi.black": "#494d64",
-		"terminal.ansi.red": "#ff6b6b",
-		"terminal.ansi.green": "#7DF9AA",
-		"terminal.ansi.yellow": "#e8c170",
-		"terminal.ansi.blue": "#b4becd",
-		"terminal.ansi.magenta": "#d6a6d6",
-		"terminal.ansi.cyan": "#7DF9AA",
-		"terminal.ansi.white": "#b4becd",
-		"terminal.ansi.bright_black": "#5d647a",
-		"terminal.ansi.bright_red": "#ff8a8a",
-		"terminal.ansi.bright_green": "#9EFFC3",
-		"terminal.ansi.bright_yellow": "#ffeaa7",
-		"terminal.ansi.bright_blue": "#d6e0ff",
-		"terminal.ansi.bright_magenta": "#e6c6ff",
-		"terminal.ansi.bright_cyan": "#9EFFC3",
-		"terminal.ansi.bright_white": "#e1e8f0",
-		"terminal.ansi.dim_black": "#494d64",
-		"terminal.ansi.dim_red": "#ff6b6b",
-		"terminal.ansi.dim_green": "#7DF9AA",
-		"terminal.ansi.dim_yellow": "#e8c170",
-		"terminal.ansi.dim_blue": "#b4becd",
-		"terminal.ansi.dim_magenta": "#d6a6d6",
-		"terminal.ansi.dim_cyan": "#7DF9AA",
-		"terminal.ansi.dim_white": "#b4becd",
-		"link_text.hover": "#7DF9AA",
-		"conflict": "#ff6b6b",
-		"conflict.border": "#ff6b6b",
-		"conflict.background": "#ff6b6b26",
-		"created": "#7DF9AA",
-		"created.border": "#7DF9AA",
-		"created.background": "#7DF9AA26",
-		"deleted": "#ff6b6b",
-		"deleted.border": "#ff6b6b",
-		"deleted.background": "#ff6b6b26",
-		"hidden": "#6e738d",
-		"hidden.border": "#6e738d",
-		"hidden.background": "#1e2030",
-		"hint": "#7DF9AA",
-		"hint.border": "#7DF9AA",
-		"hint.background": "#7DF9AA1A",
-		"ignored": "#5d647a",
-		"ignored.border": "#5d647a",
-		"ignored.background": "#5d647a26",
-		"modified": "#e8c170",
-		"modified.border": "#e8c170",
-		"modified.background": "#e8c17026",
-		"predictive": "#6e738d",
-		"predictive.border": "#7DF9AA",
-		"predictive.background": "#1e2030",
-		"renamed": "#b4becd",
-		"renamed.border": "#b4becd",
-		"renamed.background": "#b4becd26",
-		"info": "#7DF9AA",
-		"info.border": "#7DF9AA",
-		"info.background": "#7DF9AA1A",
-		"warning": "#ff9e64",
-		"warning.border": "#ff9e64",
-		"warning.background": "#ff9e641A",
-		"error": "#ff6b6b",
-		"error.border": "#ff6b6b",
-		"error.background": "#ff6b6b1A",
-		"success": "#7DF9AA",
-		"success.border": "#7DF9AA",
-		"success.background": "#1f2e21",
-		"unreachable": "#ff6b6b",
-		"unreachable.border": "#ff6b6b",
-		"unreachable.background": "#ff6b6b1f",
-		"players": [
-			{
-				"cursor": "#7DF9AA",
-				"selection": "#7DF9AA33",
-				"background": "#7DF9AA"
-			},
-			{
-				"cursor": "#bac1f7",
-				"selection": "#bac1f733",
-				"background": "#bac1f7"
-			},
-			{
-				"cursor": "#8cc7e7",
-				"selection": "#8cc7e733",
-				"background": "#8cc7e7"
-			},
-			{
-				"cursor": "#ecb197",
-				"selection": "#ecb19733",
-				"background": "#ecb197"
-			}
-		],
-		"version_control.added": "#7DF9AA",
-		"version_control.deleted": "#ed8796",
-		"version_control.modified": "#000",
-		"version_control.renamed": "#7DB8F4",
-		"version_control.conflict": "#F5C3A3",
-		"version_control.ignored": "#5B6078",
-		"syntax": {
-			"attribute": {
-				"color": "#b4becd"
-			},
-			"boolean": {
-				"color": "#7DF9AA"
-			},
-			"comment": {
-				"color": "#5d647a"
-			},
-			"constant": {
-				"color": "#e8c170"
-			},
-			"constructor": {
-				"color": "#d6a6d6"
-			},
-			"embedded": {
-				"color": "#b4becd"
-			},
-			"function": {
-				"color": "#e8c170",
-				"font_weight": 600
-			},
-			"keyword": {
-				"color": "#d6a6d6",
-				"font_style": "italic"
-			},
-			"number": {
-				"color": "#ff9e64"
-			},
-			"operator": {
-				"color": "#7DF9AA"
-			},
-			"preproc": {
-				"color": "#7DF9AA"
-			},
-			"property": {
-				"color": "#b4becd"
-			},
-			"punctuation": {
-				"color": "#7DF9AA"
-			},
-			"punctuation.bracket": {
-				"color": "#7DF9AA"
-			},
-			"punctuation.delimiter": {
-				"color": "#7DF9AA"
-			},
-			"string": {
-				"color": "#ff9e64"
-			},
-			"string.escape": {
-				"color": "#ff9e64"
-			},
-			"string.regex": {
-				"color": "#ff6b6b"
-			},
-			"tag": {
-				"color": "#7DF9AA"
-			},
-			"text.literal": {
-				"color": "#ff9e64"
-			},
-			"type": {
-				"color": "#7DF9AA"
-			},
-			"variable": {
-				"color": "#e1e8f0"
-			},
-			"variable.special": {
-				"color": "#7DF9AA"
-			}
-		}
-	},
-	"lsp": {
-		"tsgo": {
-			"settings": {
-				"experimental": {
-					"completion": {
-						"enableServerSideFuzzyMatch": true,
-						"enriesLimit": 20
-					}
-				},
-				"typescript": {
-					"preferences": {
-						"importModuleSpecifier": "non-relative",
-						"includePackageJsonAutoImports": false,
-						"quoteStyle": "single"
-					},
-					"workspaceSymbols": {
-						"scope": "currentProject"
-					}
-				},
-				"javascript": {
-					"preferences": {
-						"importModuleSpecifier": "non-relative",
-						"includePackageJsonAutoImports": false,
-						"quoteStyle": "single"
-					},
-					"workspaceSymbols": {
-						"scope": "currentProject"
-					}
-				}
-			}
-		},
-		"vtsls": {
-			"settings": {
-				"experimental": {
-					"completion": {
-						"enableServerSideFuzzyMatch": true,
-						"enriesLimit": 20
-					}
-				},
-				"typescript": {
-					"preferences": {
-						"importModuleSpecifier": "non-relative",
-						"includePackageJsonAutoImports": false,
-						"quoteStyle": "single"
-					},
-					"workspaceSymbols": {
-						"scope": "currentProject"
-					}
-				},
-				"javascript": {
-					"preferences": {
-						"importModuleSpecifier": "non-relative",
-						"includePackageJsonAutoImports": false,
-						"quoteStyle": "single"
-					},
-					"workspaceSymbols": {
-						"scope": "currentProject"
-					}
-				}
-			}
-		},
-		"tailwindcss-language-server": {
-			"settings": {
-				"classFunctions": ["cva", "cx"],
-				"emmetCompletions": true,
-				"experimental": {
-					"classRegex": [
-						["@apply\\s+([^;\\n]+)", "\\b([a-z-]+(?:-[a-z-]+)*)\\b"],
-						"class\\s*=\\s*\"([^\"]*)\"",
-						"clx\\s*=\\s*\"([^\"]*)\"",
-						["html`([^`]*)`", "class\\s*=\\s*\"([^\"]*)\""],
-						["html`([^`]*)`", "class\\s*=\\s*'([^']*)'"],
-						["innerHTML\\s*=\\s*`([^`]*)`", "class\\s*=\\s*\"([^\"]*)\""],
-						["clx\\s*\\(\\s*\\{([^}]*)\\}\\s*\\)"],
-						["cn\\s*\\(\\s*\\{([^}]*)\\}\\s*\\)"]
-					]
-				}
-			}
-		}
-	},
-	"languages": {
-		"JavaScript": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			},
-			"language_servers": [
-				"biome",
-				"!eslint",
-				"!prettier",
-				"vtsls",
-				"tailwindcss-language-server"
-			]
-		},
-		"TypeScript": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			},
-			"language_servers": [
-				"biome",
-				"!eslint",
-				"!prettier",
-				"tsgo",
-				"vtsls",
-				"tailwindcss-language-server"
-			],
-			"code_actions_on_format": {
-				"source.fixAll.biome": true,
-				"source.organizeImports.biome": true,
-				"source.addMissingImports.biome": true
-			}
-		},
-		"TSX": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			},
-			"language_servers": [
-				"biome",
-				"!eslint",
-				"!prettier",
-				"tsgo",
-				"vtsls",
-				"tailwindcss-language-server"
-			],
-			"code_actions_on_format": {
-				"source.fixAll.biome": true,
-				"source.organizeImports.biome": true,
-				"source.addMissingImports.biome": true
-			}
-		},
-		"JSON": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"JSONC": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"CSS": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"GraphQL": {
-			"formatter": {
-				"language_server": {
-					"name": "biome"
-				}
-			}
-		},
-		"Python": {
-			"formatter": {
-				"language_server": {
-					"name": "ruff"
-				}
-			},
-			"language_servers": ["pyright", "ruff", "!basedpyright"]
-		},
-		"Java": {
-			"format_on_save": "on",
-			"code_actions_on_format": {
-				"source.organizeImports": true
-			}
-		},
-		"XML": {
-			"language_servers": ["lemminx"]
-		},
-		"Markdown": {
-			"soft_wrap": "preferred_line_length",
-			"remove_trailing_whitespace_on_save": false
-		}
-	}
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.project",
+    "**/.idea",
+    "**/.vscode",
+    "**/.astro",
+    "**/.gradle",
+    "**/.m2",
+    "**/.next",
+    "**/.turbo",
+    "**/.vercel",
+    "**/.nyc_output",
+    "**/coverage",
+    "**/node_modules",
+    "**/node_modules/**",
+    "**/.vscode-test",
+    "**/__pycache__",
+    "**/.mypy_cache",
+    "**/.ruff_cache",
+    "**/.venv",
+    "**/venv",
+    "**/build",
+    "**/dist",
+    "**/target",
+    "**/.expo",
+    "**/.expo-shared",
+    "**/ios/Pods",
+    "**/android/.gradle",
+    "**/android/build",
+    "**/migrations",
+    "**/*.pyc",
+    "**/db.sqlite",
+    "**/*.db"
+  ],
+  "file_types": {
+    "dotenv": [
+      ".env*"
+    ],
+    "jsonc": [
+      "**/frontmatter.json",
+      "**/.frontmatter/config/*.json"
+    ]
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "soft_wrap": "editor_width",
+  "buffer_font_family": "CaskaydiaCove Nerd Font",
+  "buffer_font_size": 16,
+  "buffer_font_features": {
+    "ligatures": true,
+    "calt": true
+  },
+  "ui_font_size": 16,
+  "hide_mouse": "on_typing_and_movement",
+  "cursor_blink": false,
+  "relative_line_numbers": "enabled",
+  "show_wrap_guides": false,
+  "indent_guides": {
+    "line_width": 1,
+    "active_line_width": 2,
+    "coloring": "indent_aware",
+    "background_coloring": "disabled"
+  },
+  "vim_mode": false,
+  "base_keymap": "VSCode",
+  "use_on_type_format": false,
+  "search": {
+    "case_sensitive": false,
+    "include_ignored": false,
+    "whole_word": false,
+    "button": true,
+    "center_on_match": true,
+    "regex": false
+  },
+  "use_smartcase_search": true,
+  "completions": {
+    "words_min_length": 3
+  },
+  "show_signature_help_after_edits": true,
+  "show_completions_on_input": true,
+  "colorize_brackets": true,
+  "show_whitespaces": "none",
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  },
+  "project_panel": {
+    "hide_gitignore": false,
+    "entry_spacing": "standard",
+    "indent_guides": {
+      "show": "always"
+    },
+    "dock": "right",
+    "auto_reveal_entries": true
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "which_key": {
+    "enabled": true
+  },
+  "icon_theme": "VSCode Icons for Zed (Dark)",
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    },
+    "git_gutter": "tracked_files"
+  },
+  "context_servers": {},
+  "agent": {
+    "dock": "left",
+    "play_sound_when_agent_done": true,
+    "default_profile": "write",
+    "always_allow_tool_actions": true,
+    "default_model": {
+      "provider": "google",
+      "model": "gemini-3-flash"
+    },
+    "model_parameters": []
+  },
+  "wsl_connections": [
+    {
+      "distro_name": "Ubuntu-24.04",
+      "user": "vikiru",
+      "projects": [
+        {
+          "paths": [
+            "/home/vikiru/projects"
+          ]
+        },
+        {
+          "paths": [
+            "/home/vikiru/projects/boilerplate"
+          ]
+        },
+        {
+          "paths": [
+            "/home/vikiru/projects/vikiru.github.io"
+          ]
+        },
+        {
+          "paths": [
+            "/home/vikiru/projects/wordapp"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "auto_update_extensions": {
+    "opencode": false
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "redact_private_values": true,
+  "theme": {
+    "mode": "system",
+    "light": "Ayu Dark",
+    "dark": "Ayu Dark"
+  },
+  "notification_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "right"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "auto_install_extensions": {
+    "git-firefly": true,
+    "dockerfile": true,
+    "docker-compose": true,
+    "lua": true,
+    "html": true,
+    "astro": true,
+    "tombi": true,
+    "tsgo": true,
+    "biome": true,
+    "ruff": true,
+    "java-eclipse-jdtls": true,
+    "yaml": true,
+    "sql": true,
+    "markdown-oxide": true
+  },
+  "terminal": {
+    "working_directory": "current_project_directory",
+    "font_family": "JetBrainsMono Nerd Font",
+    "font_size": 15,
+    "copy_on_select": true,
+    "detect_venv": {
+      "on": {
+        "directories": [
+          ".env",
+          "env",
+          ".venv",
+          "venv"
+        ],
+        "activate_script": "default"
+      }
+    }
+  },
+  "minimap": {
+    "show": "never"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "sticky_scroll": {
+    "enabled": true
+  },
+  "active_pane_modifiers": {
+    "inactive_opacity": 0.4
+  },
+  "preview_tabs": {
+    "enabled": true,
+    "enable_preview_from_file_finder": true,
+    "enable_preview_from_project_panel": true,
+    "enable_preview_from_multibuffer": true,
+    "enable_preview_file_from_code_navigation": true
+  },
+  "use_system_path_prompts": false,
+  "experimental.theme_overrides": {
+    "accents": [
+      "#7DF9AA",
+      "#F87171",
+      "#FB923C",
+      "#FACC15",
+      "#4ADE80",
+      "#2DD4BF",
+      "#60A5FA",
+      "#6366F1",
+      "#A855F7",
+      "#EC4899",
+      "#F43F5E",
+      "#64748B"
+    ],
+    "background.appearance": "opaque",
+    "border": "#2a2f3d",
+    "border.variant": "#000000",
+    "border.focused": "#7DF9AA",
+    "border.selected": "#7DF9AA",
+    "border.transparent": "#7DF9AA",
+    "border.disabled": "#6e738d",
+    "elevated_surface.background": "#08080b",
+    "surface.background": "#0f0f14",
+    "background": "#0c0c12",
+    "element.background": "#10121a",
+    "element.hover": "#16161e",
+    "element.active": "#000000",
+    "element.selected": "#7DF9AA20",
+    "element.disabled": "#6e738d",
+    "drop_target.background": "#7DF9AA",
+    "ghost_element.background": "#08080b",
+    "ghost_element.hover": "#16161e",
+    "ghost_element.active": "#1f1f29",
+    "ghost_element.selected": "#7DF9AA30",
+    "ghost_element.disabled": "#6e738d",
+    "text": "#e1e8f0",
+    "text.muted": "#7a8499",
+    "text.placeholder": "#5b6078",
+    "text.disabled": "#494d64",
+    "text.accent": "#7DF9AA",
+    "icon": "#e1e8f0",
+    "icon.muted": "#7a8499",
+    "icon.disabled": "#6e738d",
+    "icon.placeholder": "#5b6078",
+    "icon.accent": "#7DF9AA",
+    "status_bar.background": "#050508",
+    "title_bar.background": "#050508",
+    "title_bar.inactive_background": "#181926",
+    "toolbar.background": "#0c0c12",
+    "tab_bar.background": "#0c0c12",
+    "tab.inactive_background": "#0c0c12",
+    "tab.active_background": "#10121a",
+    "search.match_background": "#7DF9AA66",
+    "panel.background": "#0c0c12",
+    "panel.focused_border": "#7DF9AA",
+    "panel.indent_guide": "#32364b",
+    "panel.indent_guide_active": "#5b6078",
+    "panel.indent_guide_hover": "#7DF9AA",
+    "panel.overlay_background": "#08080b",
+    "pane.focused_border": "#7DF9AA",
+    "pane_group.border": "#2a2f3d",
+    "scrollbar.thumb.background": "#7DF9AA33",
+    "scrollbar.thumb.hover_background": "#7DF9AA66",
+    "scrollbar.thumb.border": "#7DF9AA",
+    "scrollbar.track.background": "#0c0c12",
+    "scrollbar.track.border": "#0c0c12",
+    "editor.foreground": "#e1e8f0",
+    "editor.background": "#0c0c12",
+    "editor.gutter.background": "#0c0c12",
+    "editor.subheader.background": "#1e2030",
+    "editor.active_line.background": "#16161e",
+    "editor.highlighted_line.background": "#32364b",
+    "editor.line_number": "#494d64",
+    "editor.active_line_number": "#7DF9AA",
+    "editor.invisible": "#939ab7",
+    "editor.wrap_guide": "#5b6078",
+    "editor.active_wrap_guide": "#5b6078",
+    "editor.document_highlight.bracket_background": "#7DF9AA33",
+    "editor.document_highlight.read_background": "#7DF9AA22",
+    "editor.document_highlight.write_background": "#7DF9AA22",
+    "editor.indent_guide": "#7DF9AA15",
+    "editor.indent_guide_active": "#7DF9AA77",
+    "terminal.background": "#0c0c12",
+    "terminal.ansi.background": "#1e2030",
+    "terminal.foreground": "#e1e8f0",
+    "terminal.dim_foreground": "#6e738d",
+    "terminal.bright_foreground": "#e1e8f0",
+    "terminal.ansi.black": "#494d64",
+    "terminal.ansi.red": "#ff6b6b",
+    "terminal.ansi.green": "#7DF9AA",
+    "terminal.ansi.yellow": "#e8c170",
+    "terminal.ansi.blue": "#b4becd",
+    "terminal.ansi.magenta": "#d6a6d6",
+    "terminal.ansi.cyan": "#7DF9AA",
+    "terminal.ansi.white": "#b4becd",
+    "terminal.ansi.bright_black": "#5d647a",
+    "terminal.ansi.bright_red": "#ff8a8a",
+    "terminal.ansi.bright_green": "#9EFFC3",
+    "terminal.ansi.bright_yellow": "#ffeaa7",
+    "terminal.ansi.bright_blue": "#d6e0ff",
+    "terminal.ansi.bright_magenta": "#e6c6ff",
+    "terminal.ansi.bright_cyan": "#9EFFC3",
+    "terminal.ansi.bright_white": "#e1e8f0",
+    "terminal.ansi.dim_black": "#494d64",
+    "terminal.ansi.dim_red": "#ff6b6b",
+    "terminal.ansi.dim_green": "#7DF9AA",
+    "terminal.ansi.dim_yellow": "#e8c170",
+    "terminal.ansi.dim_blue": "#b4becd",
+    "terminal.ansi.dim_magenta": "#d6a6d6",
+    "terminal.ansi.dim_cyan": "#7DF9AA",
+    "terminal.ansi.dim_white": "#b4becd",
+    "link_text.hover": "#7DF9AA",
+    "conflict": "#ff6b6b",
+    "conflict.border": "#ff6b6b",
+    "conflict.background": "#ff6b6b26",
+    "created": "#7DF9AA",
+    "created.border": "#7DF9AA",
+    "created.background": "#7DF9AA26",
+    "deleted": "#ff6b6b",
+    "deleted.border": "#ff6b6b",
+    "deleted.background": "#ff6b6b26",
+    "hidden": "#6e738d",
+    "hidden.border": "#6e738d",
+    "hidden.background": "#1e2030",
+    "hint": "#2DD4BF",
+    "hint.border": "#7DF9AA",
+    "hint.background": "#7DF9AA1A",
+    "ignored": "#5d647a",
+    "ignored.border": "#5d647a",
+    "ignored.background": "#5d647a26",
+    "modified": "#e8c170",
+    "modified.border": "#e8c170",
+    "modified.background": "#e8c17026",
+    "predictive.border": "#7DF9AA",
+    "predictive.background": "#1e2030",
+    "renamed": "#b4becd",
+    "renamed.border": "#b4becd",
+    "renamed.background": "#b4becd26",
+    "info.border": "#7DF9AA",
+    "info.background": "#7DF9AA1A",
+    "warning": "#F59E0B",
+    "warning.border": "#F59E0B",
+    "warning.background": "#F59E0B1A",
+    "error": "#F43F5E",
+    "error.border": "#F43F5E",
+    "error.background": "#F43F5E1A",
+    "success": "#7DF9AA",
+    "success.border": "#7DF9AA",
+    "success.background": "#1f2e21",
+    "info": "#6366F1",
+    "predictive": "#64748B",
+    "unreachable": "#64748B",
+    "unreachable.border": "#ff6b6b",
+    "unreachable.background": "#ff6b6b1f",
+    "players": [
+      {
+        "cursor": "#7DF9AA",
+        "selection": "#7DF9AA33",
+        "background": "#7DF9AA"
+      },
+      {
+        "cursor": "#bac1f7",
+        "selection": "#bac1f733",
+        "background": "#bac1f7"
+      },
+      {
+        "cursor": "#8cc7e7",
+        "selection": "#8cc7e733",
+        "background": "#8cc7e7"
+      },
+      {
+        "cursor": "#ecb197",
+        "selection": "#ecb19733",
+        "background": "#ecb197"
+      }
+    ],
+    "version_control.added": "#7DF9AA",
+    "version_control.deleted": "#F43F5E",
+    "version_control.word_added": "#7DF9AA33",
+    "version_control.word_deleted": "#F43F5E33",
+    "version_control.modified": "#F59E0B",
+    "version_control.renamed": "#6366F1",
+    "version_control.conflict": "#EC4899",
+    "version_control.ignored": "#5B6078",
+    "syntax": {
+      "attribute": {
+        "color": "#60A5FA"
+      },
+      "boolean": {
+        "color": "#FB923C"
+      },
+      "comment": {
+        "color": "#5d647a"
+      },
+      "constant": {
+        "color": "#FACC15"
+      },
+      "constructor": {
+        "color": "#A855F7"
+      },
+      "embedded": {
+        "color": "#60A5FA"
+      },
+      "function": {
+        "color": "#FACC15",
+        "font_weight": 600
+      },
+      "keyword": {
+        "color": "#A855F7",
+        "font_style": "italic"
+      },
+      "number": {
+        "color": "#FB923C"
+      },
+      "operator": {
+        "color": "#7DF9AA"
+      },
+      "preproc": {
+        "color": "#7DF9AA"
+      },
+      "property": {
+        "color": "#60A5FA"
+      },
+      "punctuation": {
+        "color": "#7DF9AA"
+      },
+      "punctuation.bracket": {
+        "color": "#7DF9AA"
+      },
+      "punctuation.delimiter": {
+        "color": "#7DF9AA"
+      },
+      "string": {
+        "color": "#10B981"
+      },
+      "string.escape": {
+        "color": "#EC4899"
+      },
+      "string.regex": {
+        "color": "#F43F5E"
+      },
+      "tag": {
+        "color": "#7DF9AA"
+      },
+      "text.literal": {
+        "color": "#10B981"
+      },
+      "type": {
+        "color": "#FACC15"
+      },
+      "variable": {
+        "color": "#e1e8f0"
+      },
+      "variable.special": {
+        "color": "#7DF9AA"
+      }
+    }
+  },
+  "lsp": {
+    "tsgo": {
+      "settings": {
+        "experimental": {
+          "completion": {
+            "enableServerSideFuzzyMatch": true,
+            "entriesLimit": 20
+          }
+        },
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative",
+            "includePackageJsonAutoImports": false,
+            "quoteStyle": "single"
+          },
+          "workspaceSymbols": {
+            "scope": "currentProject"
+          }
+        },
+        "javascript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative",
+            "includePackageJsonAutoImports": false,
+            "quoteStyle": "single"
+          },
+          "workspaceSymbols": {
+            "scope": "currentProject"
+          }
+        }
+      }
+    },
+    "vtsls": {
+      "settings": {
+        "experimental": {
+          "completion": {
+            "enableServerSideFuzzyMatch": true,
+            "entriesLimit": 20
+          }
+        },
+        "typescript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative",
+            "includePackageJsonAutoImports": false,
+            "quoteStyle": "single"
+          },
+          "workspaceSymbols": {
+            "scope": "currentProject"
+          }
+        },
+        "javascript": {
+          "preferences": {
+            "importModuleSpecifier": "non-relative",
+            "includePackageJsonAutoImports": false,
+            "quoteStyle": "single"
+          },
+          "workspaceSymbols": {
+            "scope": "currentProject"
+          }
+        }
+      }
+    },
+    "tailwindcss-language-server": {
+      "settings": {
+        "classFunctions": [
+          "cva",
+          "cx"
+        ],
+        "emmetCompletions": true,
+        "experimental": {
+          "classRegex": [
+            [
+              "@apply\\s+([^;\\n]+)",
+              "\\b([a-z-]+(?:-[a-z-]+)*)\\b"
+            ],
+            "class\\s*=\\s*\"([^\"]*)\"",
+            "clx\\s*=\\s*\"([^\"]*)\"",
+            [
+              "html`([^`]*)`",
+              "class\\s*=\\s*\"([^\"]*)\""
+            ],
+            [
+              "html`([^`]*)`",
+              "class\\s*=\\s*'([^']*)'"
+            ],
+            [
+              "innerHTML\\s*=\\s*`([^`]*)`",
+              "class\\s*=\\s*\"([^\"]*)\""
+            ],
+            [
+              "clx\\s*\\(\\s*\\{([^}]*)\\}\\s*\\)"
+            ],
+            [
+              "cn\\s*\\(\\s*\\{([^}]*)\\}\\s*\\)"
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "languages": {
+    "JavaScript": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      },
+      "language_servers": [
+        "biome",
+        "!eslint",
+        "!prettier",
+        "!vtsls",
+        "tailwindcss-language-server"
+      ]
+    },
+    "TypeScript": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      },
+      "language_servers": [
+        "biome",
+        "!eslint",
+        "!prettier",
+        "tsgo",
+        "!vtsls",
+        "tailwindcss-language-server"
+      ],
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true,
+        "source.addMissingImports.biome": true
+      }
+    },
+    "TSX": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      },
+      "language_servers": [
+        "biome",
+        "!eslint",
+        "!prettier",
+        "tsgo",
+        "!vtsls",
+        "tailwindcss-language-server"
+      ],
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true,
+        "source.addMissingImports.biome": true
+      }
+    },
+    "JSON": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "JSONC": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "CSS": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "GraphQL": {
+      "formatter": {
+        "language_server": {
+          "name": "biome"
+        }
+      }
+    },
+    "Python": {
+      "formatter": {
+        "language_server": {
+          "name": "ruff"
+        }
+      },
+      "language_servers": [
+        "pyright",
+        "ruff",
+        "!basedpyright"
+      ]
+    },
+    "Java": {
+      "format_on_save": "on",
+      "code_actions_on_format": {
+        "source.organizeImports": true
+      }
+    },
+    "XML": {
+      "language_servers": [
+        "lemminx"
+      ]
+    },
+    "Markdown": {
+      "soft_wrap": "preferred_line_length",
+      "remove_trailing_whitespace_on_save": false
+    }
+  }
 }
