@@ -428,8 +428,8 @@
 			},
 			"language_servers": [
 				"biome",
-				"tailwindcss-language-server",
-				"vscode-css-language-server",
+				"tailwindcss-intellisense-css",
+				"!vscode-css-language-server",
 				"!vtsls"
 			],
 			"code_actions_on_format": {
