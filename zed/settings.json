@@ -7,11 +7,12 @@
 			"type": "registry"
 		}
 	},
+	"inlay_hints": {
+		"enabled": false
+	},
 	"vim": {
-		"enable_vim_sneak": true,
 		"use_system_clipboard": "on_yank",
 		"default_mode": "normal",
-		"relative_line_numbers": "enabled",
 		"highlight_on_yank_duration": 150
 	},
 	"file_scan_exclusions": [
@@ -148,15 +149,6 @@
 			"projects": [
 				{
 					"paths": ["/home/vikiru/projects"]
-				},
-				{
-					"paths": ["/home/vikiru/projects/boilerplate"]
-				},
-				{
-					"paths": ["/home/vikiru/projects/vikiru.github.io"]
-				},
-				{
-					"paths": ["/home/vikiru/projects/wordapp"]
 				}
 			]
 		},
@@ -321,6 +313,36 @@
 					]
 				}
 			}
+		},
+		"ty": {
+			"settings": {
+				"ty.analysis": {
+					"inlayHints": {
+						"callArgumentNames": false,
+						"implicitStringTypes": false,
+						"returnType": false
+					}
+				}
+			}
+		},
+		"ruff": {
+			"initialization_options": {
+				"settings": {
+					"format": {
+						"enabled": true
+					},
+					"linter": {
+						"enabled": true
+					},
+					"codeActions": {
+						"source": {
+							"organizeImports": {
+								"enabled": true
+							}
+						}
+					}
+				}
+			}
 		}
 	},
 	"languages": {
@@ -407,6 +429,9 @@
 			}
 		},
 		"Python": {
+			"format_on_save": "on",
+			"preferred_line_length": 120,
+			"soft_wrap": "preferred_line_length",
 			"formatter": {
 				"language_server": {
 					"name": "ruff"
