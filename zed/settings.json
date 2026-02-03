@@ -336,6 +336,14 @@
 		}
 	},
 	"languages": {
+		"Astro": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			},
+			"language_servers": ["astro", "biome", "tailwindcss-language-server", "vscode-css-language-server", "emmet-language-server"]
+		},
 		"JavaScript": {
 			"formatter": {
 				"language_server": {
@@ -354,7 +362,14 @@
 					"name": "biome"
 				}
 			},
-			"language_servers": ["biome", "tsgo", "!eslint", "!prettier", "!vtsls", "tailwindcss-language-server"],
+			"language_servers": [
+				"biome",
+				"tsgo",
+				"!eslint",
+				"!prettier",
+				"!vtsls",
+				"tailwindcss-language-server"
+			],
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
 				"source.organizeImports.biome": true,
@@ -367,7 +382,14 @@
 					"name": "biome"
 				}
 			},
-			"language_servers": ["biome", "tailwindcss-language-server", "emmet-language-server", "!eslint", "!prettier", "!vtsls"],
+			"language_servers": [
+				"biome",
+				"tailwindcss-language-server",
+				"emmet-language-server",
+				"!eslint",
+				"!prettier",
+				"!vtsls"
+			],
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
 				"source.organizeImports.biome": true,
@@ -399,7 +421,12 @@
 					"name": "biome"
 				}
 			},
-			"language_servers": ["biome", "tailwindcss-language-server", "vscode-css-language-server", "!vtsls"],
+			"language_servers": [
+				"biome",
+				"tailwindcss-language-server",
+				"vscode-css-language-server",
+				"!vtsls"
+			],
 			"code_actions_on_format": {
 				"source.fixAll.biome": true
 			}
@@ -417,7 +444,13 @@
 					"name": "biome"
 				}
 			},
-			"language_servers": ["biome", "vscode-html-language-server", "tailwindcss-language-server", "emmet-language-server", "!vtsls"],
+			"language_servers": [
+				"biome",
+				"vscode-html-language-server",
+				"tailwindcss-language-server",
+				"emmet-language-server",
+				"!vtsls"
+			],
 			"code_actions_on_format": {
 				"source.fixAll.biome": true
 			}
