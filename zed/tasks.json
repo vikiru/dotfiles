@@ -15,7 +15,7 @@
 		"command": "opencode",
 		"shell": { "program": "/bin/bash" },
 		"hide": "on_success",
-		"reveal_target": "left",
+		"reveal_target": "center",
 		"show_summary": false,
 		"show_command": false,
 		"allow_concurrent_runs": true,
