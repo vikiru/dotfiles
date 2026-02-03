@@ -10,6 +10,7 @@
 	"inlay_hints": {
 		"enabled": false
 	},
+	"format_on_save": "on",
 	"vim": {
 		"use_system_clipboard": "on_yank",
 		"default_mode": "normal",
@@ -314,17 +315,6 @@
 				}
 			}
 		},
-		"ty": {
-			"settings": {
-				"ty.analysis": {
-					"inlayHints": {
-						"callArgumentNames": false,
-						"implicitStringTypes": false,
-						"returnType": false
-					}
-				}
-			}
-		},
 		"ruff": {
 			"initialization_options": {
 				"settings": {
@@ -352,13 +342,11 @@
 					"name": "biome"
 				}
 			},
-			"language_servers": [
-				"biome",
-				"!eslint",
-				"!prettier",
-				"!vtsls",
-				"tailwindcss-language-server"
-			]
+			"language_servers": ["biome", "tsgo", "!eslint", "!prettier", "!vtsls"],
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
+			}
 		},
 		"TypeScript": {
 			"formatter": {
@@ -366,14 +354,7 @@
 					"name": "biome"
 				}
 			},
-			"language_servers": [
-				"biome",
-				"!eslint",
-				"!prettier",
-				"tsgo",
-				"!vtsls",
-				"tailwindcss-language-server"
-			],
+			"language_servers": ["biome", "tsgo", "!eslint", "!prettier", "!vtsls", "tailwindcss-language-server"],
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
 				"source.organizeImports.biome": true,
@@ -386,14 +367,7 @@
 					"name": "biome"
 				}
 			},
-			"language_servers": [
-				"biome",
-				"!eslint",
-				"!prettier",
-				"tsgo",
-				"!vtsls",
-				"tailwindcss-language-server"
-			],
+			"language_servers": ["biome", "tailwindcss-language-server", "emmet-language-server", "!eslint", "!prettier", "!vtsls"],
 			"code_actions_on_format": {
 				"source.fixAll.biome": true,
 				"source.organizeImports.biome": true,
@@ -405,6 +379,11 @@
 				"language_server": {
 					"name": "biome"
 				}
+			},
+			"language_servers": ["biome", "json-language-server", "!vtsls"],
+			"code_actions_on_format": {
+				"source.fixAll.biome": true,
+				"source.organizeImports.biome": true
 			}
 		},
 		"JSONC": {
@@ -419,6 +398,10 @@
 				"language_server": {
 					"name": "biome"
 				}
+			},
+			"language_servers": ["biome", "tailwindcss-language-server", "vscode-css-language-server", "!vtsls"],
+			"code_actions_on_format": {
+				"source.fixAll.biome": true
 			}
 		},
 		"GraphQL": {
@@ -426,6 +409,17 @@
 				"language_server": {
 					"name": "biome"
 				}
+			}
+		},
+		"HTML": {
+			"formatter": {
+				"language_server": {
+					"name": "biome"
+				}
+			},
+			"language_servers": ["biome", "vscode-html-language-server", "tailwindcss-language-server", "emmet-language-server", "!vtsls"],
+			"code_actions_on_format": {
+				"source.fixAll.biome": true
 			}
 		},
 		"Python": {
@@ -445,12 +439,9 @@
 				"source.organizeImports": true
 			}
 		},
-		"XML": {
-			"language_servers": ["lemminx"]
-		},
 		"Markdown": {
 			"soft_wrap": "preferred_line_length",
-			"remove_trailing_whitespace_on_save": false
+			"remove_trailing_whitespace_on_save": true
 		}
 	}
 }
