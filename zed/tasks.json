@@ -1,0 +1,46 @@
+[
+	{
+		"label": "Lazygit",
+		"command": "lazygit",
+		"shell": { "program": "/bin/bash" },
+		"hide": "on_success",
+		"reveal_target": "center",
+		"show_summary": false,
+		"show_command": false,
+		"allow_concurrent_runs": true,
+		"use_new_terminal": true
+	},
+	{
+		"label": "OpenCode",
+		"command": "opencode",
+		"shell": { "program": "/bin/bash" },
+		"hide": "on_success",
+		"reveal_target": "left",
+		"show_summary": false,
+		"show_command": false,
+		"allow_concurrent_runs": true,
+		"use_new_terminal": true
+	},
+	{
+		"label": "KiloCode",
+		"command": "kilocode",
+		"shell": { "program": "/bin/bash" },
+		"hide": "on_success",
+		"reveal_target": "center",
+		"show_summary": false,
+		"show_command": false,
+		"allow_concurrent_runs": true,
+		"use_new_terminal": true
+	},
+	{
+		"label": "GH Dash",
+		"command": "gh dash",
+		"shell": { "program": "/bin/bash" },
+		"hide": "on_success",
+		"reveal_target": "center",
+		"show_summary": false,
+		"show_command": false,
+		"allow_concurrent_runs": true,
+		"use_new_terminal": true
+	}
+]
