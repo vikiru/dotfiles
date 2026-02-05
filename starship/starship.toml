@@ -1,12 +1,8 @@
 # Previous color scheme: fg:#7df9aa bg:#030b16
-
-# Get editor completions based on the config schema
-"$schema" = 'https://starship.rs/config-schema.json' 
+"$schema" = 'https://starship.rs/config-schema.json' # Get editor completions based on the config schema
 
 format = """\
-[](fg:#7DF9AA)\
 $directory\
-[](fg:#7DF9AA)\
 $git_branch\
 $git_status $git_metrics\ 
 $fill\
@@ -17,29 +13,43 @@ $line_break$character\
 """
 
 [directory]
-format = "[  $path ]($style)"
+format = "[$path ]($style)"
 style = "fg:#7DF9AA"
 truncation_length = 3
 truncation_symbol = "…/"
 truncate_to_repo = false
 
-[directory.substitutions]
-"Documents" = "󰈙"
-"Downloads" = " "
-"Music" = " "
-"Pictures" = " "
-"~/projects/" = "projects/"
-"~/.config/" = "config/"
-"~/.config/nvim" = "nvim/"
+# [directory.substitutions]
+# "Documents" = "󰈙"
+# "Downloads" = " "
+# "Music" = " "
+# "Pictures" = " "
+# "~/projects/" = "projects/"
+# "~/.config/" = "config/"
+# "~/.config/nvim" = "nvim/"
+
+[git_status]
+format = "[($staged$modified$untracked$deleted$stashed$conflicted$ahead_behind)]($style)"
+staged = "[+$count](yellow) "
+modified = "[!$count](yellow) "
+deleted = "[-$count](red) "
+
+untracked = "[?$count](green) "
+stashed = "[*$count](magenta) "
+
+conflicted = "[!$count](bold red) "
+ahead = " [⇡${count}](bold magenta)"
+behind = " [⇣${count}](bold magenta)"
+diverged = " [⇡${ahead_count}⇣${behind_count}](bold magenta)"
 
 [git_branch]
-symbol = "  "
+symbol = " "
 format = '[ $symbol$branch(:$remote_branch) ]($style)'
 style = "fg:#7DF9AA"
 
-[git_status]
-format = '[$all_status$ahead_behind]($style)'
-style = "fg:#7DF9AA"
+# [git_status]
+# format = '[$all_status$ahead_behind]($style)'
+# style = "fg:#7DF9AA"
 
 [git_metrics]
 disabled = false
