@@ -1,0 +1,11 @@
+symbolPreset: nerd
+theme: 
+  dark: titanium
+setupVersion: 1
+modelRoles: 
+  default: opencode-zen/nemotron-3-ultra-free
+defaultThinkingLevel: auto
+statusLine: 
+  preset: compact
+astGrep: 
+  enabled: true

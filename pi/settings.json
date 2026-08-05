@@ -1,0 +1,15 @@
+{
+  "packages": [
+    "npm:@gotgenes/pi-permission-system",
+    "npm:pi-lens",
+    "npm:context-mode",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:pi-mcp-adapter",
+    "npm:pi-web-access",
+    "npm:pi-hermes-memory"
+  ],
+  "lastChangelogVersion": "0.83.0",
+  "defaultProvider": "opencode",
+  "defaultModel": "deepseek-v4-flash-free",
+  "defaultThinkingLevel": "high"
+}
