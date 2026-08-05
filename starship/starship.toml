@@ -1,4 +1,3 @@
-# Previous color scheme: fg:#7df9aa bg:#030b16
 "$schema" = 'https://starship.rs/config-schema.json' # Get editor completions based on the config schema
 
 format = """\
@@ -15,18 +14,9 @@ $line_break$character\
 [directory]
 format = "[$path ]($style)"
 style = "fg:#7DF9AA"
-truncation_length = 3
+truncation_length = 0
 truncation_symbol = "…/"
 truncate_to_repo = false
-
-# [directory.substitutions]
-# "Documents" = "󰈙"
-# "Downloads" = " "
-# "Music" = " "
-# "Pictures" = " "
-# "~/projects/" = "projects/"
-# "~/.config/" = "config/"
-# "~/.config/nvim" = "nvim/"
 
 [git_status]
 staged = "[+$count](yellow) "
