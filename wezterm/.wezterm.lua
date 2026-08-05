@@ -16,7 +16,6 @@ config.wsl_domains = {
 
 config.cursor_blink_rate = 800
 config.hide_mouse_cursor_when_typing = true
-config.confirm_before_quitting = false
 config.line_height = 1.1
 
 config.colors = {
@@ -73,12 +72,6 @@ config.colors = {
 	quick_select_label_fg = { Color = "#030B16" },
 	quick_select_match_bg = { AnsiColor = "Navy" },
 	quick_select_match_fg = { Color = "#FFFFFF" },
-
-	char_select_bg_color = "#374859",
-	char_select_fg_color = "#C0D4E5",
-	command_palette_bg_color = "#030B16",
-	command_palette_fg_color = "#7DF9AA",
-	command_palette_font_size = 14.0,
 }
 
 config.colors.tab_bar = {
@@ -173,7 +166,7 @@ config.keys = {
 	{ key = "k", mods = "CTRL|SHIFT", action = wezterm.action.ActivatePaneDirection("Up") },
 	{ key = "j", mods = "CTRL|SHIFT", action = wezterm.action.ActivatePaneDirection("Down") },
 
-	{ key = "w", mods = "Ctrl|Shift", action = wezterm.action.CloseCurrentPane({ confirm = true }) },
+	{ key = "w", mods = "CTRL|SHIFT", action = wezterm.action.CloseCurrentPane({ confirm = true }) },
 	{ key = "q", mods = "CTRL", action = wezterm.action.CloseCurrentTab({ confirm = true }) },
 
 	{ key = "LeftArrow", mods = "CTRL|ALT", action = wezterm.action.AdjustPaneSize({ "Left", 2 }) },
@@ -194,6 +187,5 @@ config.front_end = "OpenGL"
 config.animation_fps = 120
 config.max_fps = 120
 config.prefer_egl = true
-config.disable_unfocused_render = true
 
 return config
