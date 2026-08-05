@@ -1,13 +1,8 @@
-// Project tasks configuration. See https://zed.dev/docs/tasks for documentation.
-//
-// Example:
 [
 	{
 		"label": "Lazygit",
 		"command": "lazygit",
-		"shell": {
-			"program": "/bin/zsh"
-		},
+		"shell": { "program": "/bin/bash" },
 		"hide": "on_success",
 		"reveal_target": "center",
 		"show_summary": false,
@@ -18,11 +13,9 @@
 	{
 		"label": "OpenCode",
 		"command": "opencode",
-		"shell": {
-			"program": "/bin/zsh"
-		},
+		"shell": { "program": "/bin/bash" },
 		"hide": "on_success",
-		"reveal_target": "center",
+		"reveal_target": "left",
 		"show_summary": false,
 		"show_command": false,
 		"allow_concurrent_runs": true,
@@ -31,11 +24,9 @@
 	{
 		"label": "KiloCode",
 		"command": "kilocode",
-		"shell": {
-			"program": "/bin/zsh"
-		},
+		"shell": { "program": "/bin/bash" },
 		"hide": "on_success",
-		"reveal_target": "center",
+		"reveal_target": "left",
 		"show_summary": false,
 		"show_command": false,
 		"allow_concurrent_runs": true,
@@ -44,58 +35,11 @@
 	{
 		"label": "GH Dash",
 		"command": "gh dash",
-		"shell": {
-			"program": "/bin/zsh"
-		},
+		"shell": { "program": "/bin/bash" },
 		"hide": "on_success",
 		"reveal_target": "center",
 		"show_summary": false,
 		"show_command": false,
-		"allow_concurrent_runs": true,
-		"use_new_terminal": true
-	},
-	{
-		"label": "git_graph_serie",
-		"command": "serie",
-		"shell": {
-			"program": "/bin/zsh"
-		},
-		"hide": "on_success",
-		"reveal_target": "center",
-		"show_summary": false,
-		"show_command": false,
-		"allow_concurrent_runs": true,
-		"use_new_terminal": true
-	},
-	{
-		"label": "tv_files",
-		"command": "zed --wsl vikiru@Ubuntu-24.04 -a \"$(tv files)\"",
-		"shell": {
-			"program": "/bin/zsh"
-		},
-		"reveal_target": "center",
-		"hide": "always",
-		"allow_concurrent_runs": true,
-		"use_new_terminal": true
-	},
-	{
-		"label": "tv_fulltext_search",
-		"command": "zed --wsl vikiru@Ubuntu-24.04 -a \"$(tv text)\"",
-		"shell": {
-			"program": "/bin/zsh"
-		},
-		"hide": "always",
-		"allow_concurrent_runs": true,
-		"use_new_terminal": true
-	},
-	{
-		"label": "tv_todo",
-		"command": "zed --wsl vikiru@Ubuntu-24.04 -a \"$(tv todo-comments)\"",
-		"shell": {
-			"program": "/bin/zsh"
-		},
-		"reveal_target": "center",
-		"hide": "always",
 		"allow_concurrent_runs": true,
 		"use_new_terminal": true
 	}
