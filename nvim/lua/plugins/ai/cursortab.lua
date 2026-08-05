@@ -40,7 +40,7 @@ return {
         temperature = 0.0, -- Sampling temperature
         -- max_tokens = 512, -- Max tokens to generate
         top_k = 50, -- Top-k sampling
-        completion_timeout = 5000, -- Timeout in ms for completion requests
+        completion_timeout = 10000, -- Timeout in ms for completion requests
         max_diff_history_tokens = 512, -- Max tokens for diff history (0 = no limit)
       },
 

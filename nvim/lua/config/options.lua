@@ -8,5 +8,5 @@ local g = vim.g
 g.lazyvim_colorscheme = "teide-darker"
 
 opt.cmdheight = 0
-opt.fileformats = "unix,dos"
+opt.fileformats = { "unix,dos" }
 opt.fileformat = "unix"
