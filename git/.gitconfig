@@ -1,0 +1,78 @@
+[user]
+	name = Visakan Kirubakaran
+
+[core]
+	autocrlf = input
+  pager = delta
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[commit]
+  gpgsign = true
+
+[gpg]
+	program = gpg
+
+[push]
+  autoSetupRemote = true
+
+[delta]
+    features = aqua-dark
+    side-by-side = true
+    line-numbers = true
+    navigate = true
+    syntax-theme = none
+
+[delta "aqua-dark"]
+    dark = true
+
+    # Commit styles
+    commit-decoration-style = 159 33 box
+    commit-style = 159 bold italic 33
+
+    # File labels and styling
+    file-added-label = [+]
+    file-copied-label = [C]
+    file-modified-label = [M]
+    file-removed-label = [-]
+    file-renamed-label = [R]
+    file-style = 16 bold 159
+    file-decoration-style = 33 overline
+
+    # Hunk header styles
+    hunk-header-decoration-style = none
+    hunk-header-style = syntax bold italic 24
+
+    # Line numbers styling
+    line-numbers = true
+    line-numbers-left-format = "{nm:>1}┊"
+    line-numbers-left-style = 159
+    line-numbers-minus-style = 159 italic
+    line-numbers-plus-style = 159 italic
+    line-numbers-right-format = "{np:>1}┊"
+    line-numbers-right-style = 159
+    line-numbers-zero-style = 16 italic
+
+    # Removed lines styling
+    minus-emph-style = bold 203
+    minus-style = 203
+
+    # Added lines styling
+    plus-emph-style = bold 159
+    plus-style = 159
+
+    # Syntax highlight theme inside diffs
+    syntax-theme = Dark Neon
+
+    # Whitespace errors
+    whitespace-error-style = 203 reverse
+
+    # Neutral style for unchanged lines
+    zero-style = syntax
+
+    # Blame format and colors
+    blame-format = "{author:<18} ({commit:>7}) ┊{timestamp:^16}┊ "
