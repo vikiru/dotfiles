@@ -1,3 +1,10 @@
+# OPENSPEC:START
+# OpenSpec shell completions configuration
+fpath=("/home/vikiru/.zsh/completions" $fpath)
+autoload -Uz compinit
+compinit
+# OPENSPEC:END
+
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 
@@ -31,7 +38,7 @@ zinit snippet OMZP::node
 zinit snippet OMZP::npm
 zinit snippet OMZP::python
 zinit snippet OMZP::uv
-zinit snippet OMZP::docker
+# zinit snippet OMZP::docker
 zinit snippet OMZP::docker-compose
 zinit snippet OMZP::kubectl
 zinit snippet OMZP::git
@@ -102,8 +109,10 @@ alias c='clear'
 alias lg="lazygit"
 alias lsd="ls -D"
 alias tree="wisu"
-alias npm="pnpm" 
-alias pip="uv pip"
+alias npm="sfw pnpm"
+alias uv="sfw uv"
+alias pip="sfw uv pip"
+alias cargo="sfw cargo"
 
 # Windows Aliases
 alias zed="/mnt/d/Zed/bin/Zed.exe"
@@ -114,8 +123,8 @@ alias zed="/mnt/d/Zed/bin/Zed.exe"
 # pnpm
 export PNPM_HOME="/home/vikiru/.local/share/pnpm"
 case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
 
@@ -123,6 +132,14 @@ esac
 # Add mise installs to path
 eval "$(mise activate zsh)"
 export PATH="$HOME/.local/share/mise/installs:$PATH"
-
+export PATH="/home/vikiru/.bun/bin:$PATH"
 eval "$(starship init zsh)"
 
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/vikiru/.local/bin:$PATH"
+
+# >>> oh-my-opencode-slim background subagents >>>
+export OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS=true
+# <<< oh-my-opencode-slim background subagents <<<
